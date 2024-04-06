@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>petinfo</title>
+</head>
+<body>
+    <header class="header_container" >
+        <h1 class="header_title" >Petinfo</h1>
+        <div  class="img_logout-nav">
+        <button id="addPostButton" >Criar publicação</button>
+        <div class="user_identifier"></div>
+    </header>
+    <main>
+        <sections class="cards">
+            <h2 class="li_title">Feed</h2>
+            <ul class="list_container" ></ul>
+        </section>
+        <dialog class="modal__controller--post" >
+            <div class="modal__controller--postD">
+                <h2 class="moda_title" >Criando novo post</h2>
+                <form>
+                    <div class="inputs_modal_container">
+                        <label for="#modal_input">Titulo do post</label>
+                        <input name="title" class="create__post" id="modal_input" placeholder="digite seu título">
+                    </div>
+                    <div class="inputs_modal_container" >
+                        <label for="modal-text">Descrição</label>
+                        <textarea name="content" class="create__post" placeholder="digite sua descrição" id="modal-text"></textarea>
+                    </div>
+                    <div>
+                        <button id="closeModalButton" >cancelar</button>
+                        <button id="addPostSubmit" >publicar</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+        <dialog>
+            <div>
+                <h2>Deseja sair de da conta?</h2>
+            </div>
+        </dialog>
+        <dialog class="logout_modal">
+            <div class="logout_modalD">
+            <div class="modal_header-logout" > 
+                <h2 class="name_user" ></h2>
+                <p>x</p>
+            </div>
+            <p>Deseja sair da página?</p>
+            <button class="exit_btn">sair</button>
+            </div>
+        </dialog>
+        <dialog class="modal_edit">
+        </dialog>
+        <dialog class="delete_modal">
+            <div class="delete__modal--container">
+                <h3>confirmação de exclusão</h3>
+                <h2>Tem certeza que deseja excluir esse post?</h2>
+                <p>Essa ação não poderá ser desfeita, então pedimos que tenha cautela antes de concluir</p>
+                <div class="delete_button--container" >
+                    <button class="cancel__delete">cancelar</button>
+                    <button class="delete__btn--excludes" >sim desejo excluir esse post</button>
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="../scripts/dashboard.js"></script> 
+</body>
+</html>

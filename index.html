@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <title>Pet info</title>
+</head>
+<body>
+    <section class="form_container" >
+        <div class="form_header" >
+            <h1 class="header_title" >Cadastro</h1>
+        </div>
+        <form>
+            <div class="form_inputs" >
+                <label for="input__username">Usuário</label>
+                <input  class="register_input" type="text" name="username" placeholder="Digite o nome do seu usuário" id="input__username">
+            </div>
+            <div  class="form_inputs" >
+                <label for="input__email">Email</label>
+                <input  class="register_input" type="text" name="email" placeholder="Digite o seu email" id="input__email">
+            </div>
+            <div  class="form_inputs" >
+                <label for="input__avatar">Link da foto do Perfil</label>
+                <input  class="register_input" type="text" name="avatar" placeholder="Insira o link aqui" id="input__avatar">
+            </div>
+            <div  class="form_inputs" >
+                <label for="input__password">Senha</label>
+                <input class="register_input"  type="password" name="password" placeholder="Digite a sua senha" id="input__password">
+            </div>
+            <div class="btn_container" >
+                <button class="register_button" >Cadastrar</button>
+                <button  id="buttonTurnBack" class="back_login-button" >Voltar para login</button>
+            </div>
+        </form>
+    </section>
+    <section class="promo_container" >
+        <h2 class="promo_title" >Petinfo</h2>
+        <h2 class="promo_span">Ooooooba!</h2>
+        <p class="promo_description">Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</p>
+        <img src="./src/assets/Group 14.svg" alt="animais felizes" >
+    </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="./src/scripts/index.js"></script>  
+</body>
+</html>
